@@ -28,3 +28,20 @@ Some panels require original analysis files in addition to the scripts in this r
 ## Data availability
 
 See the manuscript's Data Availability statement for sequencing data and study resources. The [pigRegDb database](https://gonglab.hzau.edu.cn/pigRegDb) provides study data. External comparisons use [PigGTEx](https://piggtex.farmgtex.org/) and PigBiobank. Each module README specifies the processed inputs required for the example commands.
+
+## System Requirements & Installation
+- **Operating System:** Linux (tested on Ubuntu 20.04 / CentOS 7)
+- **Software Dependencies & Tested Versions:**
+  - Python (v3.9; `pandas`, `numpy`, `scipy`, `statsmodels`)
+  - R (v4.3.1; `dplyr`, `data.table`, `MatrixEQTL`, `TreeQTL`, `poolr` v1.2.0, `DESeq2`)
+  - Bioinformatics command-line tools: `fastp` (v0.23.4), `BWA` (v0.7.17), `GATK` (v4.4.0.0), `Beagle` (v5.4), `HISAT2` (v2.0.5), `StringTie` (v1.3.3), `PLINK` (v1.9), `VCFtools` (v0.1.16), `ADMIXTURE`, `PopLDdecay` (v3.43), `bedtools` (v2.26.0), `SnpEff` (v5.4.0c), `MPRAsuite` (`MPRAmatch`, `MPRAcount`, `MPRAmodel`), and `MEME Suite` (v5.5.9; `AME` and `FIMO`).
+- **Hardware:** No non-standard hardware is required.
+- **Installation Guide:**
+  - Clone the repository: `git clone https://github.com/LUCKYHAPPY-lab/DLC-regulatory.git`
+  - **Typical install time:** < 5 minutes on a standard desktop computer (assuming standard Python/R environments are available).
+
+## Demo & Usage
+- **Demo Dataset & Expected Output:** Example input datasets and corresponding expected outputs are provided in each analysis module directory (`Figure2`–`Figure6`, `ase_analysis`, and `eqtl_analysis`) as well as in the `demo/` directory.
+- **Instructions to Run on Demo Data:** Follow the example commands in each module's README (or run the demo test in `demo/`).
+- **Expected Run Time:** < 1 minute for the demo dataset on a standard desktop computer.
+- **Instructions for Use on Custom Data:** Replace the input file path in the analysis scripts with your own formatted genotype, expression, or MPRA count matrices following the example formats provided.
