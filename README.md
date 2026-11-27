@@ -41,7 +41,14 @@ See the manuscript's Data Availability statement for sequencing data and study r
   - **Typical install time:** < 5 minutes on a standard desktop computer (assuming standard Python/R environments are available).
 
 ## Demo & Usage
-- **Demo Dataset & Expected Output:** Example input datasets and corresponding expected outputs are provided in each analysis module directory (`Figure2`–`Figure6`, `ase_analysis`, and `eqtl_analysis`) as well as in the `demo/` directory.
-- **Instructions to Run on Demo Data:** Follow the example commands in each module's README (or run the demo test in `demo/`).
+
+- **Demo Dataset (`demo/demo_data.xlsx`):** A lightweight, sanitized and downsampled demo workbook (preserving all 51 worksheet schemas and column formats, with ≤30 rows per block, perturbed numerical values, and anonymized IDs/loci) is provided in `demo/demo_data.xlsx` to test code execution and input/output formatting prior to publication. Full Source Data will be made available upon formal publication.
+- **Expected Output (`demo/expected_output/`):** Representative expected output figures generated from simulated demo data are provided in `demo/expected_output/`:
+  - `demo_fig2.png` (Fig. 2e–g: expected heterozygosity, variant overlap, and selection scan)
+  - `demo_fig3.png` (Fig. 3a–f: cis-eQTL distribution, effect-size/MAF correlation, and PigGTEx comparison)
+  - `demo_fig4.png` (Fig. 4a–f: ASE ratio distribution, genomic annotation, and breed overlap)
+  - `demo_fig5.png` (Fig. 5b–d, f: MPRA replicate correlation, allelic skew, chromatin enrichment, and GC content)
+  - `demo_fig6.png` (Fig. 6a–b: multi-layered emVar–gene–trait network and regional locus tracks)
+- **Instructions to Run on Demo Data:** Follow the example commands in each module's README using the corresponding sheets from `demo/demo_data.xlsx` (or module-specific example inputs).
 - **Expected Run Time:** < 1 minute for the demo dataset on a standard desktop computer.
-- **Instructions for Use on Custom Data:** Replace the input file path in the analysis scripts with your own formatted genotype, expression, or MPRA count matrices following the example formats provided.
+- **Instructions for Use on Custom Data:** Replace the input file path in the analysis scripts with your own formatted genotype, expression, or MPRA count matrices following the column schemas in `demo/demo_data.xlsx` and each module's README.
